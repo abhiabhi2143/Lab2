@@ -1,0 +1,30 @@
+package Day16;
+import java.util.*;
+class ValidNameException extends Exception
+{
+	ValidNameException(String msg) {
+		super(msg);
+	}
+}
+public class Lab3_1{
+	static Scanner sc=new Scanner(System.in);
+	void isValid(String firstN, String lastN) throws ValidNameException
+	{
+		if(firstN.isEmpty() || lastN.isEmpty())
+		{
+			throw new ValidNameException("Invalid Name");
+		}
+		else
+		{
+			System.out.println("VALID NAME");
+		}
+		
+	}
+	public static void main(String[] args) throws ValidNameException{
+		// TODO Auto-generated method stub
+		String firstN="abhi";
+		String lastN="";
+		new Lab3_1().isValid(firstN, lastN);
+	}
+
+}
